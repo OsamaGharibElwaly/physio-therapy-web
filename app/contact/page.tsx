@@ -8,11 +8,11 @@ import clinicData from '../../data.json';
 const sectionVariants = {
   hidden: { opacity: 0, y: 60 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
-};
+} as const
 
 export default function ContactPage() {
   const { contactPage } = clinicData;
-  const whatsappNumber = contactPage.contactInfo.whatsappNumber?.replace(/[^\d]/g, '') || '1234567890'; // نظف الرقم
+  const whatsappNumber = contactPage.contactInfo.phoneNumber?.replace(/[^\d]/g, '') || '1234567890'; // نظف الرقم
 
   const [formData, setFormData] = useState({
     name: '',

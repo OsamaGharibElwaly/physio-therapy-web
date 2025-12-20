@@ -5,11 +5,16 @@
 import { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
-export default function Header() {
+// أضف interface للـ props
+interface HeaderProps {
+  clinicName: string;
+}
+
+// غير الـ function عشان تستقبل الـ prop
+export default function Header({ clinicName }: HeaderProps) {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // تحميل الثيم المخزن أو حسب إعدادات النظام
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -32,11 +37,12 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 dark:bg-gray-900 shadow-md transition-colors duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 dark:bg-gray-900/90 backdrop-blur-sm shadow-md transition-colors duration-300">
       <div className="container-custom py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-          Dr. Marwan Hesham
-        </div>
+        {/* استخدم الـ clinicName اللي جاي من الـ prop */}
+        <a href="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400 hover:opacity-90 transition">
+          {clinicName}
+        </a>
 
         <nav className="hidden md:flex space-x-8">
           <a href="/" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition">
@@ -59,7 +65,11 @@ export default function Header() {
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             aria-label="Toggle dark mode"
           >
-            {isDark ? <Sun className="w-6 h-6 text-yellow-500" /> : <Moon className="w-6 h-6 text-gray-700" />}
+            {isDark ? (
+              <Sun className="w-6 h-6 text-yellow-500" />
+            ) : (
+              <Moon className="w-6 h-6 text-gray-700 dark:text-gray-400" />
+            )}
           </button>
 
           <a href="/contact" className="btn-primary">
