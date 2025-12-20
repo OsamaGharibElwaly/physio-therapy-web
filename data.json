@@ -1,0 +1,168 @@
+{
+  "clinic": {
+    "name": "Dr. Marwan Hesham",
+    "shortBioTitle": "Meet Dr. Marwan Hesham",
+    "shortBioText": "Lead Physiotherapist & Founder, dedicated to restoring your mobility and enhancing your quality of life.",
+    "profileImages": {
+      "aboutHero": "/images/about/dr-marwan-hero.jpg",
+      "homeAboutSection": "/images/about/dr-marwan-portrait.jpg"
+    }
+  },
+
+  "cta": {
+    "primaryButtonText": "Book an Appointment",
+    "primaryButtonLink": "/contact",
+    "secondaryButtonText": "Book an Appointment Online",
+    "secondaryButtonLink": "https://booking.drhesham.com"
+  },
+
+  "aboutPage": {
+    "biographyTitle": "Dr. Hesham's Biography",
+    "biographyParagraphs": [
+      "Dr. Marwan Hesham is a board-certified physiotherapist with over 15 years of experience in orthopedic and sports rehabilitation. After graduating with top honors from the Faculty of Physical Therapy at Cairo University, he pursued advanced certifications in manual therapy and dry needling in the United States. His passion for evidence-based practice and patient-centered care led him to establish this clinic in 2010.",
+      "Throughout his career, Dr. Hesham has worked with a diverse range of patients, from professional athletes recovering from injuries to individuals seeking relief from chronic pain. He is a firm believer in empowering his patients through education, providing them with the knowledge and tools they need to take an active role in their recovery journey and prevent future injuries."
+    ],
+    "quote": {
+      "text": "True recovery isn't just about healing an injury; it's about reclaiming your life and empowering your body to perform at its best.",
+      "authorName": "Dr. Marwan Hesham"
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "text": "At our clinic, we believe in a holistic, patient-centered approach. Our mission is to provide personalized, evidence-based care that not only addresses symptoms but also treats the root cause of the problem. We are committed to fostering a supportive and motivating environment where every individual feels heard, respected, and confident in their path to recovery and peak well-being."
+    }
+  },
+
+  "homePage": {
+    "hero": {
+      "headline": "Regain Movement, Reclaim Your Life",
+      "subheadline": "Expert, personalized physiotherapy care to help you achieve your wellness goals.",
+      "heroImage": "/images/hero/home-hero.jpg"
+    },
+    "servicesIntro": {
+      "title": "Our Specialized Services",
+      "subtitle": "We provide a wide range of expert physiotherapy services tailored to your individual needs."
+    }
+  },
+
+  "services": [
+    {
+      "id": 1,
+      "title": "Sports Injury Rehabilitation",
+      "shortDescription": "Specialized care to get you back in the game safely and quickly.",
+      "longDescription": "Targeted recovery plans designed for athletes to return to peak performance with reduced risk of re-injury.",
+      "icon": "🏃",
+      "image": "/images/services/sports-injury.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Post-Surgical Therapy",
+      "shortDescription": "Customized rehabilitation programs to ensure optimal recovery after surgery.",
+      "longDescription": "Structured rehabilitation protocols to restore function and mobility following surgical procedures.",
+      "icon": "🩺",
+      "image": "/images/services/post-surgical.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Manual & Spinal Therapy",
+      "shortDescription": "Hands-on techniques to treat spinal and joint dysfunctions.",
+      "longDescription": "Expert manual therapy techniques including mobilization and manipulation for spinal and joint issues.",
+      "icon": "💆",
+      "image": "/images/services/manual-therapy.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Chronic Pain Management",
+      "shortDescription": "A multi-faceted approach to manage and reduce long-term pain.",
+      "longDescription": "Comprehensive strategies combining physical therapy, education, and lifestyle modifications for chronic pain relief.",
+      "icon": "⚕️",
+      "image": "/images/services/chronic-pain.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Neurological Rehabilitation",
+      "shortDescription": "Therapy to improve function for patients with neurological conditions.",
+      "longDescription": "Specialized programs for stroke, Parkinson's, MS, and other neurological disorders to improve mobility and function.",
+      "icon": "🧠",
+      "image": "/images/services/neuro-rehab.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Pediatric Physiotherapy",
+      "shortDescription": "Gentle and effective physiotherapy for children of all ages.",
+      "longDescription": "Age-appropriate therapy for developmental delays, injuries, and congenital conditions in children.",
+      "icon": "👶",
+      "image": "/images/services/pediatric.jpg"
+    }
+  ],
+
+  "servicesPage": {
+    "heroTitle": "Comprehensive Physiotherapy Services",
+    "heroSubtitle": "Our clinic is dedicated to providing personalized care and a holistic approach to help you on your recovery journey.",
+    "heroBackgroundImage": "/images/services/services-hero.jpg",
+    "ctaSection": {
+      "headline": "Ready to Start Your Recovery Journey?",
+      "subheadline": "Take the first step towards a pain-free life. Schedule your consultation today.",
+      "buttonText": "Book Your Appointment",
+      "buttonLink": "/contact"
+    }
+  },
+
+  "contactPage": {
+    "title": "Get in Touch",
+    "contactInfo": {
+      "addressLabel": "Address",
+      "addressText": "Egypt portsaid",
+      "phoneLabel": "Phone",
+      "phoneNumber": "+201014311662",
+      "emailLabel": "Email",
+      "emailAddress": "ptmarwanhisham@gmail.com",
+      "hoursLabel": "Opening Hours",
+      "hoursText": "Mon - Fri: 9:00 AM - 6:00 PM<br/>Sat: 9:00 AM - 2:00 PM<br/>Sun: Closed"
+    },
+    "map": {
+      "title": "Find Our Clinic",
+      "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.2314722142246!2d32.285824999999996!3d31.2696919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99ddd5dc15da5%3A0xaeddb95d48f003e!2z2YXYs9iq2LTZgdmJINin2YTZhdi52YTZhdmK2YYgKNmF2KzZhdmI2LnYqSDYp9mE2YTZiNiq2LMp!5e0!3m2!1sen!2seg!4v1766241437399!5m2!1sen!2seg"
+    }
+  },
+
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah L.",
+      "rating": 5,
+      "text": "Dr. Hesham is a miracle worker! After months of shoulder pain, his personalized treatment plan had me back to my routine in just a few weeks. Highly recommend!"
+    },
+    {
+      "id": 2,
+      "name": "Michael B.",
+      "rating": 5,
+      "text": "The entire team is professional and caring. They created a welcoming environment and helped me recover from a sports injury faster than I ever thought possible."
+    },
+    {
+      "id": 3,
+      "name": "Rania K.",
+      "rating": 5,
+      "text": "Exceptional care for my chronic back pain. The holistic approach and personalized attention made all the difference. Thank you, Dr. Hesham!"
+    }
+  ],
+
+  "footer": {
+    "tagline": "Your partner in health and recovery. Providing expert care to help you move better and live fuller.",
+    "quickLinks": [
+      { "name": "Home", "path": "/" },
+      { "name": "Services", "path": "/services" },
+      { "name": "About Us", "path": "/about" },
+      { "name": "Contact", "path": "/contact" }
+    ],
+    "address": "Egypt portsaid",
+    "phone": "+201014311662",
+    "email": "ptmarwanhisham@gmail.com",
+    "social": {
+      "facebook": "https://www.facebook.com/marwan.hisham.1311",
+      "twitter": "https://twitter.com/drheshampt",
+      "instagram": "https://www.instagram.com/marwan.hisham.1311",
+      "linkedin": "https://linkedin.com/company/drheshampt"
+    },
+    "copyrightText": "© 2024 Dr. Marwan Hesham. All rights reserved."
+  }
+}
