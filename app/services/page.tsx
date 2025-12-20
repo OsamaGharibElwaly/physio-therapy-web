@@ -5,24 +5,11 @@ import ServicesGrid from '../components/ServicesGrid';
 import CTASection from '../components/CTASection';
 import clinicData from '../../data.json';
 
-const sectionVariants = {
-  hidden: { opacity: 0, y: 60 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut" as const,  // مهم جدًا
-    } as const,  // مهم جدًا هنا كمان
-  } as const,
-} as const;
-
 export default function ServicesPage() {
   const { servicesPage, services } = clinicData;
 
   return (
     <>
-      {/* Services Hero */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -52,12 +39,11 @@ export default function ServicesPage() {
         </div>
       </motion.section>
 
-      {/* All Services */}
       <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: '-100px' }}
-        variants={sectionVariants}
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-100px" }}
         className="py-16 bg-gray-50 dark:bg-gray-900"
       >
         <div className="container-custom section-padding">
@@ -65,19 +51,13 @@ export default function ServicesPage() {
         </div>
       </motion.section>
 
-      {/* CTA Section */}
       <motion.div
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        variants={sectionVariants}
       >
-        <CTASection 
-          headline={servicesPage.ctaSection.headline}
-          subheadline={servicesPage.ctaSection.subheadline}
-          buttonText={servicesPage.ctaSection.buttonText}
-          buttonLink={servicesPage.ctaSection.buttonLink}
-        />
+        <CTASection headline={servicesPage.ctaSection.headline} subheadline={servicesPage.ctaSection.subheadline} buttonText={servicesPage.ctaSection.buttonText} buttonLink={servicesPage.ctaSection.buttonLink} />
       </motion.div>
     </>
   );

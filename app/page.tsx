@@ -1,8 +1,7 @@
-// app/page.tsx (أو HomePage component)
-
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Hero from './components/Hero';
 import ServicesGrid from './components/ServicesGrid';
 import CTASection from './components/CTASection';
@@ -10,22 +9,11 @@ import Testimonials from './components/Testimonials';
 import clinicData from '../data.json';
 
 export default function HomePage() {
-  const { homePage, services, testimonials, servicesPage } = clinicData;
-
-const sectionVariants = {
-  hidden: { opacity: 0, y: 60 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut" as const,  // مهم جدًا
-    } as const,  // مهم جدًا هنا كمان
-  } as const,
-} as const;
+  const { homePage, services, testimonials, servicesPage, clinic } = clinicData;
 
   return (
     <>
+      {/* Hero Section */}
       <section className="relative">
         <Hero 
           headline={homePage.hero.headline}
@@ -38,12 +26,13 @@ const sectionVariants = {
         />
       </section>
 
+      {/* Services Preview */}
       <motion.section
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, margin: "-100px" }}
-        variants={sectionVariants}
-        className="py-16 bg-gray-50 dark:bg-gray-800"
+        className="py-16 bg-gray-50 dark:bg-gray-900"
       >
         <div className="container-custom section-padding">
           <div className="text-center mb-12">
@@ -63,22 +52,47 @@ const sectionVariants = {
         </div>
       </motion.section>
 
+      {/* About Preview */}
       <motion.section
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, margin: "-100px" }}
-        variants={sectionVariants}
-        className="py-16 bg-white dark:bg-gray-900"
+        className="py-16 bg-white dark:bg-gray-800"
       >
-        {/* About Section */}
-        ...
+        <div className="container-custom section-padding">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                {clinic.shortBioTitle}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {clinic.shortBioText}
+              </p>
+              <a href="/about" className="inline-block btn-primary">
+                Learn More About Dr. Hesham
+              </a>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={clinic.profileImages.homeAboutSection}
+                alt="Dr. Marwan Hesham"
+                width={600}
+                height={600}
+                className="object-cover w-full h-full"
+                priority
+              />
+            </div>
+          </div>
+        </div>
       </motion.section>
 
+      {/* Testimonials */}
       <motion.section
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, margin: "-100px" }}
-        variants={sectionVariants}
         className="py-16 bg-blue-50 dark:bg-blue-950"
       >
         <div className="container-custom section-padding">
@@ -94,11 +108,12 @@ const sectionVariants = {
         </div>
       </motion.section>
 
+      {/* CTA */}
       <motion.div
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        variants={sectionVariants}
       >
         <CTASection 
           headline={servicesPage.ctaSection.headline}
