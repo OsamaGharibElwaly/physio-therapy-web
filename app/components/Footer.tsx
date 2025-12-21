@@ -120,7 +120,7 @@ export default function Footer({ data }: FooterProps) {
             <h4 className="text-lg font-semibold mb-4">Opening Hours</h4>
             <ul className="space-y-2 text-gray-300">
               <li className="flex justify-between">
-                <span>Monday - Friday</span>
+                <span>Sunday - Thursday</span>
                 <span>9:00 AM - 6:00 PM</span>
               </li>
               <li className="flex justify-between">
@@ -128,7 +128,7 @@ export default function Footer({ data }: FooterProps) {
                 <span>9:00 AM - 2:00 PM</span>
               </li>
               <li className="flex justify-between">
-                <span>Sunday</span>
+                <span>Friday</span>
                 <span>Closed</span>
               </li>
             </ul>
