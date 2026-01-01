@@ -1,6 +1,6 @@
 # Dr. Marwan Hesham Physical Therapy Clinic
 
-A modern, responsive website for Dr. Marwan Hesham's physiotherapy clinic built with Next.js 14, TypeScript, and Tailwind CSS.
+A modern, responsive website for Dr. Marwan Hesham's physiotherapy clinic built with Next.js 16, TypeScript, and Tailwind CSS.
 
 ## Features
 
